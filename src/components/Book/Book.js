@@ -11,7 +11,7 @@ const Book = (props) => {
   const deleteHandler = async (id) => {
     await axios.delete(`http://localhost:5000/books/${id}`);
     setDeleted(true);
-    history("/");
+    history("/home");
 
     // .then((res) => res.data)
     // .then(() => history("/"))
