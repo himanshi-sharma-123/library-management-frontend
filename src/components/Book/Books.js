@@ -22,7 +22,7 @@ const Books = () => {
           <Button
             LinkComponent={Link}
             to="/add"
-            sx={{ marginTop: 15, background: "orangered" }}
+            sx={{ marginTop: 5, background: "aqua", color: "black" }}
             variant="contained"
           >
             <Typography variant="h3">Add Books</Typography>

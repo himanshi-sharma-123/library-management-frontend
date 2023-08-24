@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+import "../user.css";
 
 function Signup() {
   const history = useNavigate();
@@ -34,32 +35,38 @@ function Signup() {
   }
 
   return (
-    <div className="login">
-      <h1>Signup</h1>
+    <div className="back">
+      <h2>Library Mangement System</h2>
 
-      <form action="POST">
-        <input
-          type="email"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          placeholder="Password"
-        />
-        <input type="submit" onClick={submit} />
-      </form>
+      <div className="login">
+        <h1 className="heading">Signup</h1>
 
-      <br />
-      <p>OR</p>
-      <br />
+        <form action="POST" className="form">
+          <input
+            type="email"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            placeholder="Password"
+          />
+          <input type="submit" className="button" onClick={submit} />
+        </form>
 
-      <Link to="/">Login Page</Link>
+        <br />
+        <p className="p">Already have Account? Login below</p>
+        <br />
+
+        <Link to="/" className="to">
+          Login Page
+        </Link>
+      </div>
     </div>
   );
 }

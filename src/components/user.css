@@ -1,0 +1,76 @@
+.back {
+  background-color: lightseagreen;
+  height: 100vh;
+}
+h2 {
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 560px;
+  font-size: 40px;
+  margin-top: 0%;
+}
+
+.login {
+  margin-left: 450px;
+  margin-right: 350px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.heading {
+  margin-left: 315px;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 145px;
+  margin-top: 30px;
+}
+
+form input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+  outline: none;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  color: lightseagreen;
+  border: 2px solid;
+  transition: 0.5s;
+}
+.button:hover {
+  scale: 90%;
+  color: white;
+  background-color: lightseagreen;
+}
+
+.p {
+  margin-left: 245px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.to {
+  margin-left: 320px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}

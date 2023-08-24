@@ -113,6 +113,7 @@ const AddBook = () => {
             <Checkbox checked={checked} onChange={() => setChecked(!checked)} />
           }
           label="Available"
+          name="available"
         />
 
         <Button variant="contained" type="submit">

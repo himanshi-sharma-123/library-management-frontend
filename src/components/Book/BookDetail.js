@@ -117,6 +117,7 @@ const BookDetail = () => {
                 />
               }
               label="Available"
+              name="available"
             />
 
             <Button variant="contained" type="submit">

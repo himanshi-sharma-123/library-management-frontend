@@ -1,8 +1,9 @@
-import { Button } from "@mui/material";
+import { FormControlLabel, Button, Checkbox } from "@mui/material";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./Book.css";
 import React from "react";
+
 const Book = (props) => {
   const history = useNavigate();
   const { _id, name, author, description, price, image } = props.book;
@@ -25,6 +26,7 @@ const Book = (props) => {
       <h3>{name}</h3>
       <p>{description}</p>
       <h3>Rs {price}</h3>
+      {props.available ? <h4>Available</h4> : <h4>Not Available</h4>}
       <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: "auto" }}>
         Update
       </Button>
