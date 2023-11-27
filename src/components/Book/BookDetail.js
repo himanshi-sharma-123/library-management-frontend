@@ -109,7 +109,7 @@ const BookDetail = () => {
               variant="outlined"
               name="image"
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={
                 <Checkbox
                   checked={checked}
@@ -118,7 +118,7 @@ const BookDetail = () => {
               }
               label="Available"
               name="available"
-            />
+            /> */}
 
             <Button variant="contained" type="submit">
               Update Book

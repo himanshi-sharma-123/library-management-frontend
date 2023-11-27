@@ -26,7 +26,7 @@ const Book = (props) => {
       <h3>{name}</h3>
       <p>{description}</p>
       <h3>Rs {price}</h3>
-      {props.available ? <h4>Available</h4> : <h4>Not Available</h4>}
+      {/* {props.available ? <h4>Available</h4> : <h4>Not Available</h4>} */}
       <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: "auto" }}>
         Update
       </Button>

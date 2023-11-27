@@ -108,13 +108,13 @@ const AddBook = () => {
           variant="outlined"
           name="image"
         />
-        <FormControlLabel
+        {/* <FormControlLabel
           control={
             <Checkbox checked={checked} onChange={() => setChecked(!checked)} />
           }
           label="Available"
           name="available"
-        />
+        /> */}
 
         <Button variant="contained" type="submit">
           Add Book
